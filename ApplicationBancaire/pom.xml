@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.saintaspais.l3.banque</groupId>
+  <artifactId>ApplicationBancaire</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+		<pluginManagement>
+		
+			<!-- Dans cette section on déclare les différents plugins 
+			dont on a besoin pour le projet maven -->
+			<plugins>
+				
+				<!-- Premier plugin à déclarer est celui qui permet de 
+					construire le projet, de compiler les classes
+					Java et vérifier que tout va bien -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<!-- On indique la version de Java concernée pour le projet courant -->
+						<source>11</source>
+						<target>11</target>
+						
+						<!-- De préférence garder l'encodage du texte en 
+							UTF-8 qui est le standard recommandé -->
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+				
+			</plugins>
+		</pluginManagement>
+	</build>
+  
+</project>
